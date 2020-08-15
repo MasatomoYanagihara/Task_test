@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* tests/testにアクセスしたらTestControllerに飛ばす処理。 */
+Route::get('/tests/test', 'TestController@index');
